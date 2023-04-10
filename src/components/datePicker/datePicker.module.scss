@@ -1,0 +1,168 @@
+.datePicker {
+	position: relative;
+}
+
+.dropdown {
+	z-index: 5;
+	font-weight: 400;
+	font-size: 14px;
+	position: absolute;
+	width: 204px;
+	height: 239px;
+	background: #ffffff;
+	border: 1px solid #eaf0fa;
+	box-shadow: 0px 0px 26px rgba(233, 237, 243, 0.8);
+	border-radius: 4px;
+	right: 0;
+	top: 25px;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		padding-left: 20px;
+		list-style-type: none;
+		height: 40px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		color: rgba(137, 156, 177, 1);
+		cursor: pointer;
+
+		&:hover {
+			color: #122945;
+			background-color: rgba(0, 44, 251, 0.13);
+		}
+	}
+	.active {
+		color: rgba(0, 44, 251, 1);
+	}
+}
+.title {
+	position: relative;
+	width: 110px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	.left::after {
+		cursor: pointer;
+		content: "";
+		mask: url("../../assets/img/any/arrrowLeft.svg") no-repeat 0 0 /10px 10px;
+		background-color: #adbfdf;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		top: 3px;
+		left: -5px;
+		&:hover {
+			color: #002cfb;
+		}
+	}
+	.right::after {
+		cursor: pointer;
+		content: "";
+		mask: url("../../assets/img/any/arrowRight.svg") no-repeat 0 0 /10px 10px;
+		background-color: #adbfdf;
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		top: 3px;
+		right: -7px;
+	}
+	.right:hover {
+		&::after {
+			background-color: #002cfb;
+		}
+	}
+	.left:hover {
+		&::after {
+			background-color: #002cfb;
+		}
+	}
+}
+.titleValueWrapper {
+	position: relative;
+	color: #005ff8;
+	font-size: 14px;
+	line-height: 16px;
+	// margin-left: 19px;
+	width: 44px;
+	left: 5px;
+	.calendarIcon {
+		width: 18px;
+		height: 18px;
+	}
+	.calendarIcon::after {
+		content: "";
+		mask: url("../../assets/img/any/calindar.svg") no-repeat 0 0 /18px 18px;
+		background-color: #adbfdf;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: -1px;
+		right: 34px;
+	}
+	&:hover {
+		.calendarIcon::after {
+			background-color: #002cfb;
+		}
+	}
+	.titelValue {
+		margin-left: 10px;
+		cursor: pointer;
+	}
+}
+.inputDateBlock {
+	padding-top: 7px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: row;
+	// cursor: pointer;
+	input {
+		font-family: var(--main-font);
+		width: 58px;
+		border: none;
+		outline: none;
+		font-size: 13px;
+	}
+	span {
+		color: rgba(173, 191, 223, 1);
+	}
+	img {
+		position: relative;
+		right: -25px;
+		top: -1px;
+	}
+}
+.inputAfter {
+	cursor: text;
+	position: relative;
+	&::after {
+		color: rgba(173, 191, 223, 1);
+		position: absolute;
+		content: "__.__.__";
+		left: 2px;
+		top: -1px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+}
+.inputBefore {
+	cursor: text;
+	position: relative;
+	&::after {
+		color: rgba(173, 191, 223, 1);
+		position: absolute;
+		content: "__.__.__";
+		left: 2px;
+		top: -1px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+}
+.inputDateTitle {
+	padding-left: 20px;
+	margin-top: 12px;
+	display: flex;
+	justify-content: left;
+}

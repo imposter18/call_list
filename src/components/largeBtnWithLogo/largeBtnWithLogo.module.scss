@@ -1,0 +1,24 @@
+.btn {
+	border: none;
+	border-radius: 4px;
+	background-color: rgba(0, 95, 248, 1);
+	width: 200px;
+	height: 52px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 148%;
+	color: #ffffff;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	// justify-content: center;
+	align-items: center;
+	margin: auto;
+	font-family: var(--main-font);
+	padding: 0 12px 0 24px;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

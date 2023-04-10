@@ -1,0 +1,100 @@
+.player {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	background: #eaf0fa;
+	border-radius: 48px;
+	width: 352px;
+	height: 48px;
+	align-items: center;
+	padding: 1px 17px 0 20px;
+	.progressBar {
+		display: flex;
+		margin-left: 8px;
+		label {
+			position: relative;
+			display: flex;
+			align-items: center;
+			span {
+				position: absolute;
+				top: -19px;
+			}
+		}
+	}
+
+	input[type="range"] {
+		cursor: pointer;
+		appearance: none;
+		margin: 0;
+		width: 164px;
+		height: 4px;
+		background-color: #adbfdf;
+		&::before {
+			content: "";
+			position: absolute;
+			height: 10px;
+			width: 100%;
+			top: -3px;
+		}
+		&::-webkit-slider-runnable-track {
+			cursor: pointer;
+			appearance: none;
+			height: 4px;
+			// background: #002cfb;
+			// color: #adbfdf;
+		}
+		&::-webkit-slider-thumb {
+			appearance: none;
+			cursor: pointer;
+			// background-color: #000;
+			background: #000;
+			// display: none;
+			// opacity: 0;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			margin-top: -5px;
+			opacity: 0;
+		}
+	}
+}
+
+.hoverValue {
+	font-size: 14px;
+	line-height: 145%;
+	color: #122945;
+}
+.duration {
+	color: #122945;
+	font-size: 15px;
+	line-height: 145%;
+	width: 36px;
+	height: 22px;
+}
+.playBtn {
+	margin-left: 12px;
+	cursor: pointer;
+}
+.downloadLink {
+	margin-left: 18px;
+	span {
+		&::after {
+			content: "";
+			mask: url("../../assets/img/any/download.svg") no-repeat 0 0 /18px 18px;
+			background-color: #adbfdf;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			top: -1px;
+			right: 34px;
+		}
+	}
+}
+.downloadLink:hover {
+	span::after {
+		background-color: #002cfb;
+	}
+}
+.closeBtn {
+	margin-left: 22px;
+}

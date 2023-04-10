@@ -1,0 +1,29 @@
+.leftBlock {
+	min-height: 100vh;
+	height: 100%;
+	width: 240px;
+	background-color: #091336;
+	position: fixed;
+}
+.btnBlock {
+	margin: 64px auto auto auto;
+	& > :not(:first-child) {
+		margin-top: 32px;
+	}
+}
+.order {
+	span {
+		position: relative;
+		left: -5px;
+	}
+}
+.pay {
+	span {
+		position: relative;
+		left: 5px;
+	}
+	div {
+		position: relative;
+		left: -3px;
+	}
+}

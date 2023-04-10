@@ -1,0 +1,31 @@
+.progressBarWrapper {
+	max-width: 180px;
+}
+.progressBarTitle {
+	display: flex;
+	justify-content: left;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	margin-bottom: 9px;
+	& > span {
+		margin-right: 3px;
+	}
+}
+.progressBarLine {
+	overflow: hidden;
+	position: relative;
+	width: 156px;
+	height: 6px;
+	border-radius: 12px;
+	background-color: #dee6f5;
+
+	.linePlaceHolder {
+		width: 50%;
+		position: absolute;
+		height: 6px;
+		border-radius: 12px;
+		background-color: green;
+		left: 0;
+	}
+}

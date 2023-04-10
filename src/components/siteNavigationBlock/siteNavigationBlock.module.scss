@@ -1,0 +1,28 @@
+.nav {
+	margin-top: 32px;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+		height: 52px;
+		display: flex;
+		align-items: center;
+	}
+}
+.active {
+	position: relative;
+	padding-left: 9px;
+	background-color: rgba(216, 228, 251, 0.32);
+	border-left: 3px solid #002cfb;
+	&::after {
+		position: absolute;
+		top: 17px;
+		right: 4px;
+		content: url("../../assets/img/points/yellowPoint.svg");
+	}
+}
+.notActive {
+	padding-left: 12px;
+}

@@ -1,0 +1,171 @@
+.userInfoWrapper {
+	cursor: pointer;
+	position: relative;
+	width: 68px;
+	box-sizing: border-box;
+	margin-left: 12px;
+}
+
+.userAvatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 4px;
+	position: relative;
+	img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+	span:after {
+		rotate: 180deg;
+		position: absolute;
+		right: -8px;
+		top: -13px;
+		width: 40px;
+		height: 40px;
+		content: "";
+		mask: url("../../assets/img/any/arrowTop.svg") no-repeat 0 0 /11px 11px;
+		background-color: gray;
+	}
+}
+.activePopup {
+	span:after {
+		top: 16px;
+		right: -36px;
+		rotate: 360deg;
+		background-color: #002cfb;
+	}
+}
+.dropdown {
+	z-index: 5;
+	position: absolute;
+	right: -99px;
+	top: 43px;
+	background: #ffffff;
+	border: 1px solid #eaf0fa;
+	box-shadow: 4px 16px 50px rgba(129, 135, 163, 0.24);
+	border-radius: 4px;
+	padding: 20px 0px 24px 0px;
+	width: 368px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	color: #5e7793;
+	font-size: 15px;
+	line-height: 124%;
+	.name {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 124%;
+		color: #122945;
+	}
+	.logout::after {
+		right: 6px;
+		top: 21px;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		content: "";
+		mask: url("../../assets/img/any/logoutIcon.svg") no-repeat 0 0 /18px 18px;
+		background-color: #adbfdf;
+	}
+	.logout:hover {
+		&::after {
+			background-color: #002cfb;
+		}
+	}
+}
+.topBlock {
+	padding: 0 32px 0 32px;
+}
+.dropTitle {
+	display: flex;
+	justify-content: space-between;
+}
+.dropinfo {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-top: 6px;
+}
+.dot {
+	display: flex;
+	color: #adbfdf;
+	font-size: 36px;
+	line-height: 0px;
+	margin: 0 6px 0 6px;
+}
+.contactsImgWrapper {
+	width: 14px;
+	height: 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	text-align: left;
+	margin-top: 20px;
+	border-bottom: 1px solid #eaf0fa;
+	padding-bottom: 15px;
+	img {
+		margin-right: 10px;
+	}
+}
+.phone {
+	span {
+		margin-left: 2px;
+	}
+}
+.email {
+	margin-top: 8px;
+	img {
+		position: relative;
+		top: 3px;
+	}
+}
+// .bottomBlock {
+// 	// padding-left: 32px;
+// }
+.workersGrup {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		position: relative;
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		color: #005ff8;
+		height: 48px;
+		padding: 0 32px 0 32px;
+		img {
+			margin-right: 12px;
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	li:hover {
+		cursor: pointer;
+		background-color: rgba(0, 44, 251, 0.13);
+		&::after {
+			position: absolute;
+			content: url("../../assets/img/any/anotherLogoutIcon.svg");
+			width: 18px;
+			height: 18px;
+			right: 32px;
+		}
+	}
+}
+.workersGrupTitle {
+	margin: 16px 0 8px 0;
+	padding: 0 32px 0 32px;
+}

@@ -1,0 +1,41 @@
+.balance {
+	cursor: pointer;
+	position: relative;
+	width: 145px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 48px;
+	display: flex;
+	flex-direction: row;
+	padding: 10px 12px 9px 12px;
+	font-size: 14px;
+	line-height: 148%;
+	margin-right: 51px;
+	justify-content: start;
+}
+.value {
+	color: rgba(18, 41, 69, 1);
+	margin-left: 2px;
+	font-weight: 500;
+}
+.title {
+	color: rgba(137, 156, 177, 1);
+}
+.btn::after {
+	content: "";
+	mask: url("../../assets/img/any/balance.svg") no-repeat 0 0 /24px 24px;
+	background-color: #002cfb;
+	top: 8px;
+	right: 13px;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+}
+.balance:hover {
+	.btn::after {
+		background-color: #0024cb;
+	}
+	.value {
+		color: #0024cb;
+	}
+}

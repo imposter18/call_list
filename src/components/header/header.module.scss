@@ -1,0 +1,25 @@
+.header {
+	height: 64px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 296px 596px 211px 2fr 1fr;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0px 4px 5px #e9edf3;
+}
+.date {
+	position: relative;
+	left: 19px;
+	color: #899cb1;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 148%;
+}
+.callsAnalytics {
+	display: grid;
+	grid-template-columns: repeat(3, 219px);
+}
+.search {
+	display: flex;
+	justify-content: right;
+}
